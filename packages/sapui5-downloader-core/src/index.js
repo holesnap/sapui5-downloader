@@ -103,7 +103,7 @@ class Downloader {
     await fs.remove(this.directories.download)
     await fs.mkdirp(this.directories.download)
 
-    console.warn('By using this npm package you agree to the EULA from SAP: https://tools.hana.ondemand.com/developer-license-3_1.txt/')
+    console.warn('By using this npm package you agree to the EULA from SAP: https://tools.hana.ondemand.com/developer-license-3_2.txt/')
     console.log('Downloading SAPUI5...')
 
     const zipFile = path.join(this.directories.download, 'sapui5.zip')
@@ -112,7 +112,7 @@ class Downloader {
       const req = request({
         url: sapui5DownloadURL,
         headers: {
-          Cookie: 'eula_3_1_agreed=tools.hana.ondemand.com/developer-license-3_1.txt',
+          Cookie: 'eula_3_2_agreed=tools.hana.ondemand.com/developer-license-3_2.txt',
         },
       })
 
